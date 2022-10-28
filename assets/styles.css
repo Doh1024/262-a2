@@ -22,6 +22,7 @@ fieldset{
   margin: auto;
   text-align: center;
 }
+
 label{
   cursor: pointer;
   margin: 10px 10px;
@@ -67,7 +68,7 @@ input:checked + label:before {
 .hero{
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.726),rgba(0, 0, 0, 0.514)),url('/assets/733243111-huge.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.726),rgba(0, 0, 0, 0.514)),url('./733243111-huge.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
