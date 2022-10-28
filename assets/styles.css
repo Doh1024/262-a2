@@ -1,0 +1,160 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  /*fonts*/
+  font-size: 20px;
+  font-family: 'Inter Tight', 'Lato', sans-serif;
+}
+
+
+/*----------------------CSS FOR A2--------------------------*/
+.wrap{
+  padding: .5rem;
+}
+
+input{
+  display: none;
+}
+fieldset{
+  background: rgb(77, 77, 77);
+  margin: auto;
+  text-align: center;
+}
+label{
+  cursor: pointer;
+  margin: 10px 10px;
+}
+
+label:before {
+  content: '';
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background: white;
+  border-radius: 50%;
+  z-index: 2;
+  transition: box-shadow .4s ease, background .3s ease;
+}
+
+input:checked + label:before {
+  box-shadow: inset 0px 3px 0 2px rgb(34, 34, 34);
+  background: #fff;
+}
+
+.color1{
+  color: #caebf2;
+}
+
+.color2{
+  color: blue;
+}
+
+.color3{
+  color: aquamarine;
+}
+
+.link1{
+  border: 4px solid #caebf2; /*ff3b3f*/
+  color: #ff3b3f;
+}
+
+/*------------------------------------------------*/
+
+
+/*positioning and gradient for hero img*/
+.hero{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.726),rgba(0, 0, 0, 0.514)),url('/assets/733243111-huge.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  /*fonts*/
+  color: #efefef;
+}
+
+/*positioning container*/
+.contain{
+  width: 90%;
+  height: 100%;
+  max-width: 40ch;
+
+  /*flex*/
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/*styling the word above title*/
+.contain .info .top-h1 p{
+  padding-left: 1rem;
+  line-height: 1.5rem;
+  padding-top: 10px;
+
+  /*fonts*/
+  letter-spacing: .8rem;
+  color: #A9A9A9;
+}
+
+/*sizing and positioning for title*/
+.contain .info h1{
+  margin-bottom: 1rem;
+  letter-spacing: .5rem;
+
+  /*fonts*/
+  font-size: 5rem;
+  font-family: 'Playfair Display', 'Inter Tight', 'Lato';
+}
+
+/*sizing and positioning for h2*/
+.contain .info h2{
+  margin-bottom: 1rem;
+
+  /*fonts*/
+  font-size: 1.6rem;
+  color: #A9A9A9;
+}
+
+/*sizing and positioning for paragraph btwn h2 and cta*/
+.contain .info p{  
+  max-width: 40ch;
+  
+  /*fonts*/
+  line-height: 1.3rem;
+  font-size: 1rem;
+  color: #A9A9A9;
+}
+
+/*sizing, positioning and styling for CTA*/
+.contain .info a{
+  display: inline-block; /*so it doesn't overlap with P tag*/
+  border-radius: 5px;
+  padding: .3em .5em;
+  margin-top: 2rem;
+  transition: all 0.4s ease 0s;
+
+  border: 4px solid #ff3b3f; /*ff3b3f*/
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+
+/*Hover state for CTA*/
+.contain .info a:hover{
+  background-color: #caebf2; /*caebf2*/
+  border-color: #caebf2;
+  color: black;
+
+  transition: all 0.4s ease 0s;
+}
+
+@media only screen and (max-width: 650px){
+  html{
+    font-size: 10px;
+  }
+}
